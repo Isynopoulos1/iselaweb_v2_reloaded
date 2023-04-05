@@ -1,11 +1,16 @@
 //IMPORT STYLES
 import { FooterContainer } from "./Footer.styles";
+import { SocialContainer } from "../../elements/social/Social.styles";
+
+//IMPORT COMPONENTS
+import Social from "../../elements/social/Social";
 
 const Footer = () => {
   return (
     <>
       <FooterContainer>
-        <div>Soy un footer</div>
+        <Social />
+        <div>Copyright 2023 IselAlarcón© | All rights reserved</div>
       </FooterContainer>
     </>
   );
