@@ -13,11 +13,13 @@ const InLogo = ({ color, width, height, href }) => {
 };
 
 InLogo.propTypes = {
-  color: PropTypes.string
+  color: PropTypes.string,
+  width: PropTypes.string
 };
 
 InLogo.defaultProps = {
-  color: "black"
+  color: "black",
+  width: "15px"
 };
 
 export default InLogo;

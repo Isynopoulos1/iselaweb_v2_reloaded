@@ -13,10 +13,12 @@ const GitLogo = ({ color, width, height, href }) => {
 };
 
 GitLogo.propTypes = {
-  color: PropTypes.string
+  color: PropTypes.string,
+  width: PropTypes.string
 };
 GitLogo.defaultProps = {
-  color: "black"
+  color: "black",
+  width: "15px"
 };
 
 export default GitLogo;

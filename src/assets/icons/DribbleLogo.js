@@ -13,10 +13,12 @@ const DribbleLogo = ({ color, height, width, href }) => {
 };
 
 DribbleLogo.propTypes = {
-  color: PropTypes.string
+  color: PropTypes.string,
+  width: PropTypes.string
 };
 DribbleLogo.defaultProps = {
-  color: "black"
+  color: "black",
+  width: "15px"
 };
 
 export default DribbleLogo;

@@ -1,4 +1,5 @@
 import React from "react";
+import { sizes, fonts, weights, colors } from "../../../styles/index";
 
 //IMPORT STYLES
 import { SocialContainer } from "./Social.styles";
@@ -11,9 +12,9 @@ import InLogo from "../../../assets/icons/InLogo";
 export const Social = () => {
   return (
     <SocialContainer>
-      <DribbleLogo width="15px" />
-      <GitLogo width="15px" />
-      <InLogo width="15px" />
+      <DribbleLogo />
+      <GitLogo />
+      <InLogo />
     </SocialContainer>
   );
 };

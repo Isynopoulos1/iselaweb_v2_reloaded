@@ -7,6 +7,6 @@ export const HeaderContainer = styled.h1`
   align-items: center;
   flex-direction: column;
   font-family: ${fonts.font1};
-  font-weight: ${weights.weight1};
+  font-weight: ${weights.weigth3};
   font-size: ${sizes.lg};
 `;

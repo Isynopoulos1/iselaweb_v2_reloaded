@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <>
       <HeaderContainer>
-        <h1>Soy un header!</h1>
+        <p>Soy un header!</p>
       </HeaderContainer>
     </>
   );

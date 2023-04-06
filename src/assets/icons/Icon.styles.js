@@ -1,7 +1,11 @@
 import styled from "styled-components";
+import { colors } from "../../styles/index";
 
 export const Icon = styled.svg`
-  color: red;
+  transition: 0.3s ease;
+  &:hover {
+    fill: ${colors.lightgray};
+  }
 `;
 
 export default Icon;
