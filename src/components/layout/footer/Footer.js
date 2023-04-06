@@ -1,6 +1,5 @@
 //IMPORT STYLES
 import { FooterContainer } from "./Footer.styles";
-import { SocialContainer } from "../../elements/social/Social.styles";
 
 //IMPORT COMPONENTS
 import Social from "../../elements/social/Social";
