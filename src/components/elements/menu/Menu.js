@@ -8,24 +8,13 @@ const Menu = () => {
   const [isOpen, setOpen] = useState(false);
 
   const openMenu = () => {
-    setOpen(!isOpen);
+    return setOpen(!isOpen);
   };
   return (
-    <MenuContainer>
-      <Hamburger
-        toggled={isOpen}
-        toggle={setOpen}
-        onToggle={toggled => {
-          if (toggled) {
-          } else {
-            // close a menu
-          }
-        }}
-        // open a menu
-      />
-      <h3> El menu esta: {isOpen ? "cerrado" : "abierto"}</h3>
-      <button onClick={Hamburger}> {openMenu}</button>
-    </MenuContainer>
+    <>
+      <Hamburger toggled={isOpen} toggle={setOpen} onToggle={openMenu} />
+      {isOpen && <MenuContainer> menu</MenuContainer>}
+    </>
   );
 };
 

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { sizes, fonts, weights } from "../../../styles/index";
 
-export const HeaderContainer = styled.h1`
+export const HeaderContainer = styled.header`
   width: 100%;
   display: flex;
   align-items: center;
