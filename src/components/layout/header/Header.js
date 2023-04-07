@@ -2,12 +2,15 @@
 import { HeaderContainer } from "./Header.styles";
 
 //IMPORT COMPONENTS
+import IaLogo from "../../elements/logo/IaLogo";
+import Menu from "../../elements/menu/Menu";
 
 const Header = () => {
   return (
     <>
       <HeaderContainer>
-        <p>Soy un header!</p>
+        <IaLogo />
+        <Menu />
       </HeaderContainer>
     </>
   );

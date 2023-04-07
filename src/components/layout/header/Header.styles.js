@@ -8,5 +8,5 @@ export const HeaderContainer = styled.h1`
   flex-direction: column;
   font-family: ${fonts.font1};
   font-weight: ${weights.weigth3};
-  font-size: ${sizes.lg};
+  border: 1px solid green;
 `;
