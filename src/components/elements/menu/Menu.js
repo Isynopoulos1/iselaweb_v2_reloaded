@@ -13,7 +13,7 @@ const Menu = () => {
   return (
     <>
       <Hamburger toggled={isOpen} toggle={setOpen} onToggle={openMenu} />
-      {isOpen && <MenuContainer> menu</MenuContainer>}
+      {isOpen && <MenuContainer> </MenuContainer>}
     </>
   );
 };
