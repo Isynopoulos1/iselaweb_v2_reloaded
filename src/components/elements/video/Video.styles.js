@@ -1,11 +1,11 @@
 import styled from "styled-components";
 export const VideoContainer = styled.div`
-  width: calc(100% - 200px);
+  width: calc(100% - 600px);
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
+  margin-top: 10px;
 `;
 
 export const MainVideo = styled.video`

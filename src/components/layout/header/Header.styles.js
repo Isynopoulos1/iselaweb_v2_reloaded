@@ -9,5 +9,4 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   font-family: ${fonts.font1};
   font-weight: ${weights.weigth3};
-  border: 1px solid green;
 `;

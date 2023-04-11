@@ -8,4 +8,5 @@ export const SocialContainer = styled.div`
   justify-content: center;
   grid-gap: 20px;
   cursor: pointer;
+  margin-top: 10px;
 `;

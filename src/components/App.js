@@ -9,15 +9,17 @@ import { Route, Routes } from "react-router-dom";
 import Home from "../components/pages/home/Home";
 import Works from "../components/pages/works/Works";
 import Contact from "../components/pages/contact/Contact";
+import About from "../components/pages/about/About";
 
 const App = () => {
   return (
     <div>
       <Header />
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/works" element={<Works />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
       </Routes>
       <Footer />
     </div>
