@@ -1,22 +1,22 @@
 import styled from "styled-components";
+import { sizes, fonts } from "../../../styles/index";
 
 export const AboutContainer = styled.div`
   width: 100%;
-  border: 1px solid green;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
-export const Bio = styled.p`
-  font-size: 16px;
-  border: 1px solid red;
+export const Bio = styled.div`
+  width: 800px;
+  font-size: ${sizes.md};
   text-align: center;
+  font-family: ${fonts.font1};
 `;
 
 export const Picture = styled.img`
   display: flex;
-  width: 30%;
+  width: 800px;
   height: auto;
-  border: 1px solid purple;
 `;

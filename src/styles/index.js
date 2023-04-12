@@ -2,8 +2,9 @@ export const sizes = {
   xss: "8px",
   xs: "10px",
   sm: "12px",
-  md: "16px",
-  lg: "20px"
+  md: "14px",
+  lg: "16px",
+  xlg: "20px"
 };
 
 export const fonts = {
