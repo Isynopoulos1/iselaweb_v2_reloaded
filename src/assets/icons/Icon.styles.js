@@ -4,7 +4,7 @@ import { colors } from "../../styles/index";
 export const Icon = styled.svg`
   transition: 0.3s ease;
   &:hover {
-    fill: ${colors.lightgray};
+    fill: ${colors.test};
   }
 `;
 

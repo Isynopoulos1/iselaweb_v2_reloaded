@@ -25,5 +25,5 @@ export const colors = {
   lightergray: "#80808094",
   lightgray: "#808080",
   secondary: "#FEFAEE",
-  test: "#FF0000"
+  test: "#D4C9FD"
 };
