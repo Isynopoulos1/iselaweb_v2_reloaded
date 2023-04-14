@@ -4,7 +4,8 @@ export const sizes = {
   sm: "12px",
   md: "14px",
   lg: "16px",
-  xlg: "20px"
+  xlg: "20px",
+  hg: "30px"
 };
 
 export const fonts = {
@@ -26,4 +27,13 @@ export const colors = {
   lightgray: "#808080",
   secondary: "#FEFAEE",
   test: "#D4C9FD"
+};
+
+export const margins = {
+  top1: "20px",
+  top2: "50px",
+  top3: "150px",
+  bottom1: "20px",
+  bottom2: "50px",
+  bottom3: "150px"
 };

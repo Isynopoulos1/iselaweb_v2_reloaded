@@ -1,11 +1,10 @@
 import styled from "styled-components";
-import { fonts, weights } from "../../../styles/index";
+import { fonts, weights, margins } from "../../../styles/index";
 
 export const MainContainer = styled.header`
   position: relative;
   width: 100%;
   display: flex;
-  margin-bottom: 150px;
 `;
 
 export const HeaderContainer = styled.div`
@@ -18,4 +17,6 @@ export const HeaderContainer = styled.div`
   justify-content: space-between;
   font-family: ${fonts.font1};
   font-weight: ${weights.weigth3};
+  margin-top: ${margins.top1};
+  margin-bottom: ${margins.bottom2};
 `;

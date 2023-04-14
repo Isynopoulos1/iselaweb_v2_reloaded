@@ -14,4 +14,7 @@ const Works = () => {
   );
 };
 
+const Projects = <Card />;
+console.log(Projects);
+
 export default Works;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { sizes, fonts } from "../../../styles/index";
+import { sizes, fonts, margins } from "../../../styles/index";
 
 export const FooterContainer = styled.footer`
   width: 100%;
@@ -8,4 +8,6 @@ export const FooterContainer = styled.footer`
   flex-direction: column;
   align-items: center;
   font-family: ${fonts.font1};
+  margin-top: ${margins.top1};
+  margin-bottom: ${margins.bottom1};
 `;

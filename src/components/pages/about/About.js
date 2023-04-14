@@ -1,23 +1,28 @@
 import React from "react";
 
 //IMPORT STYLES
-import { AboutContainer, Bio, Picture } from "./About.styles";
+import { AboutContainer, Bio, Picture, Greetings, Description } from "./About.styles";
 
 const About = () => {
   return (
     <AboutContainer>
+      <Picture id="image " src="https://ik.imagekit.io/ppayaz/iselalarcon/about/profilenuevo_1_qOOqdg9pg.jpg?updatedAt=1681467409389" />
       <Bio>
-        <h1>Hola :) </h1>
-        <p>
-          Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las
-          industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los
-          mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de
-          relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas
-          "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker,
-          el cual incluye versiones de Lorem Ipsum.
-        </p>
+        <Greetings>Hello :) </Greetings>
+        <Description>
+          <li> I'm a Product Designer and Frontend Developer that feels passionate for design, arts, and technology. </li>
+          <li>
+            With a background in digital, I've worked for over ten years in digital advertising agencies, where I had the chance to design for
+            different international brands such as Paypal, Movistar, and Amazon.
+          </li>
+          <li>In 2020, I moved to Barcelona to jump into the technology field. </li>
+          <li>
+            My curiosity and interest in Web development took me to learn new tools such as HTML, CSS, SASS, and languages as Javascript with
+            libraries such as React and Nodejs.
+          </li>
+          <li>One of the things that I enjoy the most is building sites and implementing a design system. 🔺 ◼️ 🔹</li>
+        </Description>
       </Bio>
-      <Picture id="image " src="https://ik.imagekit.io/ppayaz/iselalarcon/about/profilenuevo_noisy_sFJOPGACm.jpg?updatedAt=1678025109385" />
     </AboutContainer>
   );
 };
