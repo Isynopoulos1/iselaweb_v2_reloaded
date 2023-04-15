@@ -20,8 +20,8 @@ export const Bio = styled.div`
   text-align: center;
 `;
 export const Greetings = styled.h2`
-  font-size: ${sizes.hg};
-  font-weight: 300;
+  font-size: 100px;
+  font-weight: 100;
 `;
 export const Description = styled.li`
   list-style-type: none;

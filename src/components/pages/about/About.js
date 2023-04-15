@@ -10,7 +10,7 @@ const About = () => {
       <Bio>
         <Greetings>Hello :) </Greetings>
         <Description>
-          <li> I'm a Product Designer and Frontend Developer that feels passionate for design, arts, and technology. </li>
+          <li> I'm Isela, a Product Designer and Frontend Developer that feels passionate for design, arts, and technology. </li>
           <li>
             With a background in digital, I've worked for over ten years in digital advertising agencies, where I had the chance to design for
             different international brands such as Paypal, Movistar, and Amazon.

@@ -1,5 +1,7 @@
 import React from "react";
 
+//IMPORT DATA
+import { projects } from "../../../assets/data/Data";
 //IMPORT STYLES
 import { WorkContainer } from "./Work.styles";
 
@@ -9,12 +11,11 @@ import Card from "../../elements/card/Card";
 const Works = () => {
   return (
     <WorkContainer>
-      <Card />
+      {projects.map(card => (
+        <Card title={card.title} cover={card.cover} />
+      ))}
     </WorkContainer>
   );
 };
-
-const Projects = <Card />;
-console.log(Projects);
 
 export default Works;

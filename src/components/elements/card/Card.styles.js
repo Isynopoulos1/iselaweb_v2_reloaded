@@ -12,7 +12,7 @@ export const Cover = styled.img`
   border-radius: 5px;
 `;
 
-export const Project = styled.h1`
+export const Project = styled.h2`
   width: 100%;
   font-size: ${sizes.md};
   text-align: center;
