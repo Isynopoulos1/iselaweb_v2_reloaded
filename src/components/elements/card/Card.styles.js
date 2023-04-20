@@ -9,7 +9,8 @@ export const Cover = styled.img`
   display: flex;
   width: 380px;
   height: auto;
-  border-radius: 5px;
+  border-radius: 6px;
+  cursor: pointer;
 `;
 
 export const Project = styled.h2`

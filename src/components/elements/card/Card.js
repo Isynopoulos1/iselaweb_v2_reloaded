@@ -6,10 +6,10 @@ import { projects } from "../../../assets/data/Data";
 //IMPORT STYLES
 import { CardContainer, Project, Cover } from "./Card.styles";
 
-const Card = ({ title, cover }) => {
+const Card = ({ title, cover, onClick }) => {
   return (
     <CardContainer>
-      <Cover id="Project" src={cover} />
+      <Cover src={cover} onClick={onClick} />
       <Project>{title}</Project>
     </CardContainer>
   );
@@ -17,8 +17,10 @@ const Card = ({ title, cover }) => {
 
 Card.propTypes = {
   cover: PropTypes.string,
-  title: PropTypes.string
+  title: PropTypes.string,
+  onClick: PropTypes.func.isRequired
 };
+
 Card.defaultProps = {
   cover: "",
   title: ""
