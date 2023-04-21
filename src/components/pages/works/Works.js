@@ -15,7 +15,7 @@ const Works = () => {
   return (
     <WorkContainer>
       {projects.map(card => (
-        <Card onClick={() => navigate("/work")} key={card.id} title={card.title} cover={card.cover} />
+        <Card onClick={() => navigate("/work")} key={card.id} title={card.title} cover={card.cover} href={card.href} />
       ))}
     </WorkContainer>
   );

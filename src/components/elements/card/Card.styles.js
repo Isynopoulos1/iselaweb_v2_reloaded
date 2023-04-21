@@ -19,3 +19,6 @@ export const Project = styled.h2`
   text-align: center;
   font-family: ${fonts.font1};
 `;
+export const Link = styled.div`
+  width: 100%;
+`;
