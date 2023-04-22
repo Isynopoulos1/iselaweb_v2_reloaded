@@ -8,6 +8,7 @@ import { Route, Routes } from "react-router-dom";
 // IMPORT COMPONENTS
 import Home from "../components/pages/home/Home";
 import Works from "../components/pages/works/Works";
+import Work from "../components/pages/work/Work";
 import Contact from "../components/pages/contact/Contact";
 import About from "../components/pages/about/About";
 
@@ -18,6 +19,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/works" element={<Works />} />
+        <Route path="/works/:name" element={<Work />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
       </Routes>

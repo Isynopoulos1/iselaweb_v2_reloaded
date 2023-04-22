@@ -1,24 +1,19 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 //IMPORT DATA
 import { projects } from "../../../assets/data/Data";
-// IMPORT STYLES
-import { WorkContainer } from "./work.styles";
+
+//IMPORT STYLES
+import { WorkContainer } from "../work/Work.styles";
 
 //IMPORT COMPONENTS
 import Card from "../../elements/card/Card";
-import Works from "../works/Works";
 
 const Work = () => {
-  const navigate = useNavigate();
-  return (
-    <WorkContainer>
-      {projects.map(card => (
-        <Card onClick={() => navigate("/works")} context={card.context} challenges={card.challenges} user={card.user} process={card.process} />
-      ))}
-    </WorkContainer>
-  );
+  const { name } = useParams();
+
+  return <WorkContainer>{projects.find(p => projects.href === name)}</WorkContainer>;
 };
 
 export default Work;
