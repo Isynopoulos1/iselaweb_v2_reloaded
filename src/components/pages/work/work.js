@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import { projects } from "../../../assets/data/Data";
 
 //IMPORT STYLES
-import { WorkContainer } from "../work/Work.styles";
+import { WorkContainer, Project, Context, Challenges, User, Process, Tools } from "../work/Work.styles";
 
 const Work = () => {
   const { name } = useParams();
@@ -14,6 +14,15 @@ const Work = () => {
       return p.href === name;
     }) ?? {};
 
-  return <WorkContainer>{project.title}</WorkContainer>;
+  return (
+    <WorkContainer>
+      <Project>{project.title}</Project>
+      <Context>{project.context}</Context>
+      <Challenges>{project.challenges}</Challenges>
+      <User>{project.user}</User>
+      <Process>{project.process}</Process>
+      <Tools>{project.tools}</Tools>
+    </WorkContainer>
+  );
 };
 export default Work;
