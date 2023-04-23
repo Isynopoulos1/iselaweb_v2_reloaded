@@ -8,6 +8,7 @@ import { WorkContainer } from "./Works.styles";
 
 //IMPORT COMPONENTS
 import Card from "../../elements/card/Card";
+import Work from "../work/Work";
 
 const Works = () => {
   const navigate = useNavigate();

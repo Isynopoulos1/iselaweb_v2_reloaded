@@ -7,13 +7,13 @@ import { projects } from "../../../assets/data/Data";
 //IMPORT STYLES
 import { WorkContainer } from "../work/Work.styles";
 
-//IMPORT COMPONENTS
-import Card from "../../elements/card/Card";
-
 const Work = () => {
   const { name } = useParams();
+  const project =
+    projects?.find(p => {
+      return p.href === name;
+    }) ?? {};
 
-  return <WorkContainer>{projects.find(p => projects.href === name)}</WorkContainer>;
+  return <WorkContainer>{project.title}</WorkContainer>;
 };
-
 export default Work;
