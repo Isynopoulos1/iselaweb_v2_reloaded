@@ -13,7 +13,10 @@ export const fonts = {
 };
 
 export const weights = {
-  weight1: "100"
+  weight1: "100",
+  weight2: "200",
+  weight3: "300",
+  weight4: "500"
 };
 
 export const colors = {

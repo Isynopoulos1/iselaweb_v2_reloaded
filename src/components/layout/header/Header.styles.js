@@ -5,6 +5,7 @@ export const MainContainer = styled.header`
   position: relative;
   width: 100%;
   display: flex;
+  z-index: 2;
 `;
 
 export const HeaderContainer = styled.div`
