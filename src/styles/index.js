@@ -5,7 +5,8 @@ export const sizes = {
   md: "14px",
   lg: "16px",
   xlg: "20px",
-  hg: "30px"
+  hg: "30px",
+  xhg: "50px"
 };
 
 export const fonts = {

@@ -3,7 +3,7 @@ import { Squeeze as Hamburger } from "hamburger-react";
 import PropTypes from "prop-types";
 
 //IMPORT STYLES
-import { MainContainer, MenuContainer } from "./Menu.styles";
+import { MainContainer } from "./Menu.styles";
 
 //IMPORT COMPONENTS
 import AsideMenu from "../aside/AsideMenu";
@@ -17,11 +17,7 @@ const Menu = () => {
   return (
     <MainContainer>
       <Hamburger toggled={isOpen} toggle={setOpen} onToggle={openMenu} />
-      {isOpen && (
-        <MenuContainer>
-          <AsideMenu />
-        </MenuContainer>
-      )}
+      {isOpen && <AsideMenu />}
     </MainContainer>
   );
 };

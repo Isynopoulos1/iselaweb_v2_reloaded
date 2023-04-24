@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { fonts, sizes } from "../../../styles/index";
+import { fonts, weights } from "../../../styles/index";
 
 export const AsideContainer = styled.div`
   display: flex;
@@ -17,20 +17,9 @@ export const AsideContainer = styled.div`
 export const MenuOptions = styled.div`
   font-family: ${fonts.font1};
   text-align: center;
-  font-weight: 300;
-  font-size: ${sizes.lg};
+  font-weight: ${weights.weight1};
   display: flex;
   flex-direction: column;
   justify-content: center;
-`;
-
-export const Work = styled.div`
-  font-size: 2rem;
-`;
-export const Contact = styled.div`
-  font-size: 2rem;
-`;
-
-export const About = styled.div`
-  font-size: 2rem;
+  gap: 20px;
 `;
