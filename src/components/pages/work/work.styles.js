@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { fonts, sizes } from "../../../styles/index";
 
 export const WorkContainer = styled.div`
   position: relative;
@@ -7,12 +8,12 @@ export const WorkContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0px auto;
+  font-family: ${fonts.font1};
 `;
 
 export const Project = styled.h1`
   display: flex;
-  font-size: 50px;
-
+  font-size: ${sizes.hg};
   width: 100%;
 `;
 

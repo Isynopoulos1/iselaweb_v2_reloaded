@@ -1,7 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-//DATA
-import { projects } from "../../../assets/data/Data";
 
 //IMPORT STYLES
 import { CardContainer, Project, Cover } from "./Card.styles";

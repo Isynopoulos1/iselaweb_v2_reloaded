@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 
 //IMPORT DATA
-import { projects } from "../../../assets/data/Data";
+import { projects } from "../../../assets/data";
 
 //IMPORT STYLES
 import { WorkContainer, Project, Context, Challenges, User, Process, Tools } from "../work/Work.styles";
