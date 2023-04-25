@@ -13,8 +13,8 @@ const Works = () => {
   const navigate = useNavigate();
   return (
     <WorkContainer>
-      {projects.map(card => (
-        <Card onClick={() => navigate(card.href)} key={card.id} title={card.title} cover={card.cover} />
+      {projects.map((card, i) => (
+        <Card onClick={() => navigate(card.href)} key={i} title={card.title} cover={card.cover} />
       ))}
     </WorkContainer>
   );

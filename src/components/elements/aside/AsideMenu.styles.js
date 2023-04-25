@@ -15,6 +15,7 @@ export const AsideContainer = styled.div`
 `;
 
 export const MenuOptions = styled.div`
+  position: relative;
   font-family: ${fonts.font1};
   text-align: center;
   font-weight: ${weights.weight1};

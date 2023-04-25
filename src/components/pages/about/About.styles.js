@@ -23,7 +23,7 @@ export const Greetings = styled.h2`
   font-size: 100px;
   font-weight: 100;
 `;
-export const Description = styled.li`
+export const Description = styled.ul`
   list-style-type: none;
   font-weight: 300;
 `;
