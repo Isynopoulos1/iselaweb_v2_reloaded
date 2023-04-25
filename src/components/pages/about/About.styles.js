@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { sizes, fonts } from "../../../styles/index";
+import { sizes, fonts, weights } from "../../../styles/index";
 
 export const AboutContainer = styled.div`
   position: relative;
@@ -20,12 +20,12 @@ export const Bio = styled.div`
   text-align: center;
 `;
 export const Greetings = styled.h2`
-  font-size: 100px;
-  font-weight: 100;
+  font-size: ${sizes.xhg};
+  font-weight: ${weights.w2};
 `;
 export const Description = styled.ul`
   list-style-type: none;
-  font-weight: 300;
+  font-weight: ${weights.w3};
 `;
 
 export const Picture = styled.img`

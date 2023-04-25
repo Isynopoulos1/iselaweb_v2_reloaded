@@ -6,7 +6,8 @@ export const sizes = {
   lg: "16px",
   xlg: "20px",
   hg: "30px",
-  xhg: "50px"
+  xhg: "50px",
+  xxx: "60px"
 };
 
 export const fonts = {
@@ -14,10 +15,10 @@ export const fonts = {
 };
 
 export const weights = {
-  weight1: "100",
-  weight2: "200",
-  weight3: "300",
-  weight4: "500"
+  w1: "100",
+  w2: "200",
+  w3: "300",
+  w4: "500"
 };
 
 export const colors = {
@@ -27,10 +28,14 @@ export const colors = {
   darkgray: "#1A1A1A",
   btngray: "#8080801c",
   mediumgray: "#232323",
+  slgray: "#ebebeb",
   lightergray: "#80808094",
   lightgray: "#808080",
   secondary: "#FEFAEE",
-  test: "#D4C9FD"
+  test1: "#dad4f44d",
+  test2: "#D4C9FD",
+  test3: "#ebe6ff",
+  test4: "#b8a6ff"
 };
 
 export const margins = {

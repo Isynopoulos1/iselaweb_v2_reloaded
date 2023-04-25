@@ -8,7 +8,7 @@ const About = () => {
     <AboutContainer>
       <Picture id="image " src="https://ik.imagekit.io/ppayaz/iselalarcon/about/profilenuevo_1_qOOqdg9pg.jpg?updatedAt=1681467409389" />
       <Bio>
-        <Greetings>Hello :) </Greetings>
+        <Greetings>Hello there! </Greetings>
         <Description>
           <li> I'm Isela, a Product Designer and Frontend Developer that feels passionate for design, arts, and technology. </li>
           <li>

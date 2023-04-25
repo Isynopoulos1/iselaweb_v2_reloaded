@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { fonts, weights } from "../../../styles/index";
+import { fonts, weights, sizes, colors } from "../../../styles/index";
 
 export const AsideContainer = styled.div`
   display: flex;
@@ -11,16 +11,25 @@ export const AsideContainer = styled.div`
   right: 0;
   top: 0;
   background-color: white;
-  transition-duration: 1s;
 `;
 
 export const MenuOptions = styled.div`
   position: relative;
   font-family: ${fonts.font1};
   text-align: center;
-  font-weight: ${weights.weight1};
+  font-weight: ${weights.w1};
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  font-size: ${sizes.xhg};
+
+  & a {
+    text-decoration: none;
+    color: black;
+  }
+  & a:hover {
+    color: ${colors.test1};
+    transition: color 0.8s ease;
+  }
 `;
