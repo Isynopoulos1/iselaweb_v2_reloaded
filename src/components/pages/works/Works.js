@@ -8,7 +8,6 @@ import { WorkContainer, Filters } from "./Works.styles";
 
 //IMPORT COMPONENTS
 import Card from "../../elements/card/Card";
-import BtnFilter from "../../btnFilter/BtnFilter";
 
 const Works = () => {
   const navigate = useNavigate();

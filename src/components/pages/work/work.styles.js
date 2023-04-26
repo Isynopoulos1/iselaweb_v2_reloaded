@@ -10,6 +10,11 @@ export const WorkContainer = styled.div`
   margin: 0px auto;
   font-family: ${fonts.font1};
 `;
+export const ProjectTags = styled.div`
+  display: flex;
+  justify-content: center;
+  grid-gap: 10px;
+`;
 
 export const Project = styled.h1`
   display: flex;
@@ -23,11 +28,6 @@ export const Video = styled.video`
   width: 100%;
   height: auto;
   justify-content: center;
-`;
-export const Tags = styled.p`
-  display: flex;
-  font-weight: ${weights.w4};
-  font-size: ${sizes.md};
 `;
 
 export const Context = styled.p`

@@ -8,7 +8,7 @@ import { projects } from "../../../assets/data";
 import BtnFilter from "../../btnFilter/BtnFilter";
 
 //IMPORT STYLES
-import { WorkContainer, Project, Context, Challenges, User, Process, Tools, Video } from "../work/Work.styles";
+import { WorkContainer, Project, Context, Challenges, User, Process, Tools, Video, ProjectTags } from "../work/Work.styles";
 
 const Work = () => {
   // HOOKS AND VARIABLES
@@ -26,7 +26,7 @@ const Work = () => {
   // MAIN RENDER
   return (
     <WorkContainer>
-      {renderTags()}
+      <ProjectTags>{renderTags()}</ProjectTags>
       <Project>{project.title}</Project>
       <Context>{project.context}</Context>
       <Challenges>{project.challenges}</Challenges>
