@@ -12,3 +12,6 @@ export const WorkContainer = styled.div`
   justify-content: center;
   margin: 0px auto;
 `;
+export const Filters = styled.div`
+  display: flex;
+`;

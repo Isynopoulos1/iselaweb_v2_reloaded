@@ -1,6 +1,5 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { useState } from "react";
 
 //IMPORT DATA
 import { projects } from "../../../assets/data";
@@ -9,25 +8,25 @@ import { projects } from "../../../assets/data";
 import BtnFilter from "../../btnFilter/BtnFilter";
 
 //IMPORT STYLES
-import { WorkContainer, Project, Context, Challenges, User, Process, Tools, Tags, Video } from "../work/Work.styles";
+import { WorkContainer, Project, Context, Challenges, User, Process, Tools, Video } from "../work/Work.styles";
 
 const Work = () => {
+  // HOOKS AND VARIABLES
   const { name } = useParams();
-  const project =
-    projects?.find(p => {
-      return p.href === name;
-    }) ?? {};
+  const project = projects?.find(p => p.href === name) ?? {};
 
-  const [filteredProjects, setFilteredProjects] = useState(projects);
+  // HANDLE FUNCTIONS
+  console.log(project.tags);
 
-  const HandleFilter = tag => {
-    const filtered = projects.filter(project => project.tags.includes(tag));
-    setFilteredProjects(filtered);
+  // RENDER FUNCTION
+  const renderTags = () => {
+    return project.tags.map((tag, i) => <BtnFilter key={i} tag={tag} />);
   };
 
+  // MAIN RENDER
   return (
     <WorkContainer>
-      <BtnFilter />
+      {renderTags()}
       <Project>{project.title}</Project>
       <Context>{project.context}</Context>
       <Challenges>{project.challenges}</Challenges>

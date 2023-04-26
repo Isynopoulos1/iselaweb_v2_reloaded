@@ -45,7 +45,6 @@ export const projects = [
     process: "",
     tools: ["Tools:"]
   },
-
   {
     href: "ppayaz",
     tags: ["UI-UX", "Development", "Animation", "Branding", "Art Direction"],
