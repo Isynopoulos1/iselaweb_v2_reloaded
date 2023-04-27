@@ -10,6 +10,7 @@ export const BtnContainer = styled.button`
   justify-content: center;
   font-size: ${sizes.md};
   padding: 2px;
+  cursor: pointer;
 
   &:hover {
     transition: color 0.2s ease;

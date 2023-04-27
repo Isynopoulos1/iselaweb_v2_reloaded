@@ -4,10 +4,11 @@ import { useNavigate } from "react-router-dom";
 //IMPORT DATA
 import { projects } from "../../../assets/data";
 //IMPORT STYLES
-import { WorkContainer, Filters } from "./Works.styles";
+import { WorkContainer, Filters, MappedCards } from "./Works.styles";
 
 //IMPORT COMPONENTS
 import Card from "../../elements/card/Card";
+import BtnFilter from "../../btnFilter/BtnFilter";
 
 const Works = () => {
   const navigate = useNavigate();
@@ -16,13 +17,18 @@ const Works = () => {
   const filtersSet = new Set(filtersList);
   const filterArray = [...filtersSet];
 
-  console.log(filterArray);
   return (
     <WorkContainer>
-      <Filters></Filters>
-      {projects.map((card, i) => (
-        <Card onClick={() => navigate(card.href)} key={i} title={card.title} cover={card.cover} />
-      ))}
+      <Filters>
+        {filterArray.map((item, i) => (
+          <BtnFilter tag={item} key={i} />
+        ))}
+      </Filters>
+      <MappedCards>
+        {projects.map((card, i) => (
+          <Card onClick={() => navigate(card.href)} key={i} title={card.title} cover={card.cover} />
+        ))}
+      </MappedCards>
     </WorkContainer>
   );
 };
