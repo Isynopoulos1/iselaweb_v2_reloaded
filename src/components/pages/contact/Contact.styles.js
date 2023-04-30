@@ -19,7 +19,7 @@ export const Greetings = styled.h1`
   font-family: ${fonts.font1};
 `;
 
-export const formContainer = styled.form`
+export const formContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;

@@ -9,7 +9,10 @@ const Contact = () => {
       <Greetings>Let's talk!</Greetings>
       <formContainer>
         <input type="form" placeholder="Name" />
-        <input type="text" placeholder="Meesagge" />
+        <input type="text" placeholder="Mail" />
+        <textarea name="Message" id="" cols="30" rows="10">
+          Message
+        </textarea>
       </formContainer>
     </ContactContainer>
   );
