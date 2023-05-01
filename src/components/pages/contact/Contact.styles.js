@@ -26,7 +26,11 @@ export const FormContainer = styled.form`
 `;
 export const InputStyle = styled.input`
   width: 100%;
+  text-decoration: none;
+  border: 1px solid gray;
 `;
 export const TextArea = styled.textarea`
   width: 100%;
+  border: 1px solid gray;
+  color: gray;
 `;
