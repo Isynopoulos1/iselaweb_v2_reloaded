@@ -4,6 +4,7 @@ import { fonts, colors } from "../../styles/index";
 export const BtnContainer = styled.button`
   width: 100px;
   border-radius: 50px;
+  padding: 5px;
   font-family: ${fonts.font1}
   text-decoration: none;
   border: 1px solid black;

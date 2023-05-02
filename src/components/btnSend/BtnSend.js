@@ -3,11 +3,18 @@ import React from "react";
 
 import { BtnContainer } from "../btnSend/BtnSend.styles";
 
-const BtnSend = () => {
-  const handleClick = () => {
-    console.log("button clicked");
+const BtnSend = ({ state }) => {
+  // HANDLE FUNCTIONS
+  const handleClick = async e => {
+    e.preventDefault();
+
+    console.log(state);
+    // API EXAMPLE
+    // await axios.post("/api/message", { state });
   };
-  return <BtnContainer onClick={handleClick}>BtnSend</BtnContainer>;
+
+  // MAIN RENDER
+  return <BtnContainer onClick={handleClick}> :)</BtnContainer>;
 };
 
 export default BtnSend;
