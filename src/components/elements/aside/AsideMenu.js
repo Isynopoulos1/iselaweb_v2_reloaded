@@ -8,8 +8,8 @@ import { AsideContainer, MenuOptions } from "../aside/AsideMenu.styles";
 const AsideMenu = ({ toggleMenu }) => {
   const categories = [
     { path: "/about", label: "About" },
-    { path: "/contact", label: "Contact" },
-    { path: "/works", label: "Works" }
+    { path: "/works", label: "Works" },
+    { path: "/contact", label: "Contact" }
   ];
 
   return (

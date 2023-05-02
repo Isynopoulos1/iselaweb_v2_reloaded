@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { fonts } from "../../../styles/index";
+import { fonts, colors } from "../../../styles/index";
 
 export const ContactContainer = styled.div`
   width: 100%;
@@ -22,6 +22,8 @@ export const Greetings = styled.h1`
 export const FormContainer = styled.form`
   width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 30px;
 `;
@@ -32,6 +34,14 @@ export const InputStyle = styled.input`
   border-radius: 5px;
   padding: 10px;
   font-family: ${fonts.font1};
+
+  &:hover {
+    border: 1px solid ${colors.test3};
+    color: ${colors.test3};
+  }
+  &:focus {
+    outline: none;
+  }
 `;
 export const TextArea = styled.textarea`
   width: 100%;
@@ -41,4 +51,26 @@ export const TextArea = styled.textarea`
   border-radius: 5px;
   padding: 10px;
   font-family: ${fonts.font1};
+  &:hover {
+    border: 1px solid ${colors.test3};
+  }
+  &:focus {
+    outline: none;
+  }
+`;
+
+export const BtnSend = styled.button`
+  width: 100px;
+
+  border-radius: 50px;
+  text-decoration: none;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: ${colors.test3};
+    border: 1px solid ${colors.test3};
+  }
 `;
