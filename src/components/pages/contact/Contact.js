@@ -1,6 +1,9 @@
 import React from "react";
-import { ContactContainer, Greetings, FormContainer, InputStyle, TextArea, BtnSend } from "./Contact.styles";
 //IMPORT STYLES
+import { ContactContainer, Greetings, FormContainer, InputStyle, TextArea } from "./Contact.styles";
+
+//IMPORT COMPONENTS
+import BtnSend from "../../btnSend/BtnSend";
 
 const Contact = () => {
   return (
@@ -10,7 +13,7 @@ const Contact = () => {
         <InputStyle type="form" placeholder="Name" />
         <InputStyle type="text" placeholder="Mail" />
         <TextArea name="Message" id="textarea" cols="30" rows="10" defaultValue="Message " />
-        <BtnSend>Send</BtnSend>
+        <BtnSend />
       </FormContainer>
     </ContactContainer>
   );
