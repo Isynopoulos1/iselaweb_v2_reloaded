@@ -13,21 +13,20 @@ const Contact = () => {
     message: ""
   });
 
-  // TODO SAVE FORM STATES
-
   // HANDLE FUNCTION
-  // TODO Handle function to save state onChange inputs
-  // const handleChangeName = e => {
+  // const handleName = e => {
   //   setState({ ...state, name: e.target.value });
   // };
-  // const handleChangeEmail = e => {
+
+  // const handleMail = e => {
   //   setState({ ...state, email: e.target.value });
   // };
-  // const handleChangeMessage = e => {
+  // const handleMessage = e => {
   //   setState({ ...state, message: e.target.value });
   // };
-  const handleChange = e => {
-    setState({ ...state, [e.target.name]: e.target.value });
+
+  const handleEvent = e => {
+    setState({ ...state, [e.target.name]: [e.target.value] });
   };
 
   // MAIN RENDER
@@ -35,9 +34,9 @@ const Contact = () => {
     <ContactContainer>
       <Greetings>Let's talk!</Greetings>
       <FormContainer>
-        <InputStyle type="form" name="name" placeholder="Name" onChange={handleChange} />
-        <InputStyle type="text" name="email" placeholder="Mail" onChange={handleChange} />
-        <TextArea id="textarea" name="message" cols="30" rows="10" placeholder="Message" onChange={handleChange} />
+        <InputStyle type="form" name="name" placeholder="Name" onChange={handleEvent} />
+        <InputStyle type="text" name="email" placeholder="Mail" onChange={handleEvent} />
+        <TextArea id="textarea" name="message" cols="30" rows="10" placeholder="Message" onChange={handleEvent} />
         <BtnSend state={state} />
       </FormContainer>
     </ContactContainer>
