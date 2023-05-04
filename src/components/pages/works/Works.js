@@ -9,10 +9,12 @@ import { WorkContainer, Filters, MappedCards } from "./Works.styles";
 //IMPORT COMPONENTS
 import Card from "../../elements/card/Card";
 import BtnFilter from "../../btnFilter/BtnFilter";
+import SearchBar from "../../searchBar/SearchBar";
 
 const Works = () => {
   //hooks
   const [currentTag, setCurrentTag] = useState(null);
+  console.log(currentTag);
 
   //handle function
   const handleClick = tag => {
@@ -29,9 +31,10 @@ const Works = () => {
     <WorkContainer>
       <Filters>
         {filterArray.map((item, i) => (
-          <BtnFilter handleClick={handleClick} tag={item} key={i} />
+          <BtnFilter handleClick={() => handleClick(item)} tag={item} key={i} />
         ))}
       </Filters>
+      <SearchBar />
       <MappedCards>
         {projects
           .filter(card => (currentTag ? card.tags.includes(currentTag) : true))
