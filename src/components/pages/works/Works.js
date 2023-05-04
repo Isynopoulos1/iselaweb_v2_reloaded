@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 //IMPORT DATA
 import { projects } from "../../../assets/data";
 //IMPORT STYLES
-import { WorkContainer, Filters, MappedCards } from "./Works.styles";
+import { WorkContainer, Filters, MappedCards, SearchProjects } from "./Works.styles";
 
 //IMPORT COMPONENTS
 import Card from "../../elements/card/Card";
@@ -14,12 +14,12 @@ import SearchBar from "../../searchBar/SearchBar";
 const Works = () => {
   //hooks
   const [currentTag, setCurrentTag] = useState(null);
-  console.log(currentTag);
 
   //handle function
   const handleClick = tag => {
     setCurrentTag(tag);
   };
+
   //main render
   const navigate = useNavigate();
 
@@ -34,7 +34,9 @@ const Works = () => {
           <BtnFilter handleClick={() => handleClick(item)} tag={item} key={i} />
         ))}
       </Filters>
-      <SearchBar />
+      <SearchProjects>
+        <SearchBar />
+      </SearchProjects>
       <MappedCards>
         {projects
           .filter(card => (currentTag ? card.tags.includes(currentTag) : true))

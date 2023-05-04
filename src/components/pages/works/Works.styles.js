@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { margins } from "../../../styles/index";
 export const WorkContainer = styled.div`
   width: 100%;
   max-width: 1200px;
@@ -23,6 +23,12 @@ export const MappedCards = styled.div`
 export const Filters = styled.div`
   display: flex;
   justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: ${margins.bottom2};
   gap: 10px;
+`;
+export const SearchProjects = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 `;
