@@ -14,10 +14,16 @@ import SearchBar from "../../searchBar/SearchBar";
 const Works = () => {
   //hooks
   const [currentTag, setCurrentTag] = useState(null);
+  const [search, setSearch] = useState("");
 
   //handle function
   const handleClick = tag => {
     setCurrentTag(tag);
+  };
+
+  // handle search
+  const handleSearch = search => {
+    setSearch(search);
   };
 
   //main render
@@ -27,6 +33,10 @@ const Works = () => {
   const filtersSet = new Set(filtersList);
   const filterArray = [...filtersSet];
 
+  const searchList = projects.map(p => p.title).flat();
+  const filteredProjects = searchList.filter(project => project === projects.title);
+  console.log(filteredProjects);
+
   return (
     <WorkContainer>
       <Filters>
@@ -35,7 +45,7 @@ const Works = () => {
         ))}
       </Filters>
       <SearchProjects>
-        <SearchBar />
+        <SearchBar handleSearch={handleSearch} />
       </SearchProjects>
       <MappedCards>
         {projects

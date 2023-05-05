@@ -1,31 +1,20 @@
-import React, { useState } from "react";
-import { projects } from "../../assets/data";
+import React from "react";
+// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 
 //import Styles
 import { InputContainer, SearchBarContainer } from "../searchBar/SearchBar.styles";
 
-const SearchBar = () => {
-  //hooks
-  const [search, setSearch] = useState("");
-  const [filteredProjects, setFilteredProjects] = useState([]);
-
-  //handle function
-  const handleSearch = e => {
-    const searchTerm = e.target.value.toLowerCase();
-    setSearch(searchTerm);
-    const filtered = projects.filter(p => p.title.toLowerCase().includes(searchTerm));
-    setFilteredProjects(filtered);
-  };
-
-  // render
+const SearchBar = ({ search }) => {
   return (
     <SearchBarContainer>
-      <InputContainer type="text" placeholder="Search" onChange={handleSearch} />
-      {filteredProjects.map(p => (
-        <div key={p.id}>{p.title}</div>
-      ))}
+      <InputContainer type="text" placeholder="Search" onChange={search} />
     </SearchBarContainer>
   );
+};
+
+SearchBar.propTypes = {
+  handleSearch: PropTypes.func.isRequired
 };
 
 export default SearchBar;
