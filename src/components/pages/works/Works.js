@@ -21,21 +21,15 @@ const Works = () => {
     setCurrentTag(tag);
   };
 
-  // handle search
-  const handleSearch = search => {
-    setSearch(search);
+  const handleSearch = e => {
+    setSearch(e.target?.value?.toLowerCase());
   };
 
   //main render
   const navigate = useNavigate();
-
   const filtersList = projects.map(p => p.tags).flat(); // 44 filters with duplicates
   const filtersSet = new Set(filtersList);
   const filterArray = [...filtersSet];
-
-  const searchList = projects.map(p => p.title).flat();
-  const filteredProjects = searchList.filter(project => project === projects.title);
-  console.log(filteredProjects);
 
   return (
     <WorkContainer>
@@ -49,6 +43,7 @@ const Works = () => {
       </SearchProjects>
       <MappedCards>
         {projects
+          .filter(project => project.title.toLowerCase().includes(search))
           .filter(card => (currentTag ? card.tags.includes(currentTag) : true))
           .map((card, i) => (
             <Card onClick={() => navigate(card.href)} key={i} title={card.title} cover={card.cover} />
