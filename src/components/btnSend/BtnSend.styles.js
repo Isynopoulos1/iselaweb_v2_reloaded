@@ -7,7 +7,7 @@ export const BtnContainer = styled.button`
   padding: 5px;
   font-family: ${fonts.font1}
   text-decoration: none;
-  border: 1px solid black;
+  border: 1px solid  ${colors.test3};
   background-color: white;
   color: black;
   transition: background-color 0.3s ease;

@@ -30,13 +30,14 @@ export const FormContainer = styled.form`
 export const InputStyle = styled.input`
   width: 100%;
   text-decoration: none;
-  border: 1px solid gray;
+  border: 1px solid ${colors.test3};
   border-radius: 5px;
   padding: 10px;
   font-family: ${fonts.font1};
+  border: 1px solid ${colors.test3};
 
   &:hover {
-    border: 1px solid ${colors.test3};
+    border: 1px solid gray;
     color: ${colors.test3};
   }
   &:focus {
@@ -47,12 +48,13 @@ export const TextArea = styled.textarea`
   width: 100%;
   border: 1px solid gray;
   text-decoration: none;
-  color: gray;
+  color: ${colors.test3};
+  border: 1px solid ${colors.test3};
   border-radius: 5px;
   padding: 10px;
   font-family: ${fonts.font1};
   &:hover {
-    border: 1px solid ${colors.test3};
+    border: 1px solid gray;
   }
   &:focus {
     outline: none;

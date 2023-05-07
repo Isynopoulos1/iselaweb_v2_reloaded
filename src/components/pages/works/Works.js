@@ -24,7 +24,7 @@ const Works = () => {
   const handleSearch = e => {
     setSearch(e.target?.value?.toLowerCase());
   };
-
+  console.log(search);
   //main render
   const navigate = useNavigate();
   const filtersList = projects.map(p => p.tags).flat(); // 44 filters with duplicates

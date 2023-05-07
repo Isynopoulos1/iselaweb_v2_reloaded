@@ -1,5 +1,4 @@
 import React from "react";
-
 //import Styles
 import { InputContainer } from "../searchBar/SearchBar.styles";
 
